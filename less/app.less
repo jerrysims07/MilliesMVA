@@ -1,0 +1,51 @@
+@base: #f0f0f0;
+@textColor: #0a0a0a;
+@boardColor: #fcfcfc;
+
+body{
+  background-color: @base;
+  color: @textColor;
+}
+
+#gameArea, body, html
+{
+  width:100%;
+}
+
+.space
+{
+  border: 1px solid #cccccc;
+  height: 80px;
+  width: 80px;
+  float:left;
+}
+
+.space
+{
+  background-color: @boardColor;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#messageCenter, #scoreArea
+{
+  height: 100px;
+  width: 100%;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+#messageCenter
+{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.quiet
+{
+  color: #cccccc;
+  background-color: @base;
+  border-color: @base;
+}
+
